@@ -80,6 +80,7 @@ function reset() {
         playerTwoBoxDOM.classList.remove('active');
     }
 
+    diceDOM.style.display = 'inline-block';
     diceDOM.src = 'img/dice-1.png';
 
     rollButtonDOM.style.display = 'inline-block';
@@ -123,7 +124,7 @@ function changeActivePlayer() {
     playerTwoBoxDOM.classList.toggle('active');
 }
 
-// end game if someone has > 100 points
+// end game if someone has enough points
 function winner(winner) {
     rollButtonDOM.style.display = 'none';
     passButtonDOM.style.display = 'none';
