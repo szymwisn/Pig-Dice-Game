@@ -1,4 +1,4 @@
-var currentScore, playerOneScore, playerTwoScore, dice, activePlayer;
+var currentScore, playerOneScore, playerTwoScore, dice, activePlayer, playerOneName, playerTwoName, scoreToWin;
 
 // DOM
 var diceDOM = document.querySelector('.dice');
@@ -19,10 +19,12 @@ var rollButtonDOM = document.getElementById('btn-roll');
 var passButtonDOM = document.getElementById('btn-pass');
 
 // set everything to the starting point
+settings();
 reset();
 
 // NEW GAME button logic
 document.getElementById('btn-new').addEventListener('click', function() {
+    settings();
     reset();
 });
 
@@ -59,11 +61,11 @@ passButtonDOM.addEventListener('click', function() {
         playerTwoScoreDOM.textContent = playerTwoScore + '';
     }   
 
-    if(playerOneScore >= 100) {
+    if(playerOneScore >= scoreToWin) {
         winner('one');
     } 
     
-    if(playerTwoScore >= 100) {
+    if(playerTwoScore >= scoreToWin) {
         winner('two');
     }
 
@@ -75,6 +77,7 @@ passButtonDOM.addEventListener('click', function() {
 
 // set the game to the starting point
 function reset() {
+
     if(activePlayer === 2) {
         playerOneBoxDOM.classList.add('active');
         playerTwoBoxDOM.classList.remove('active');
