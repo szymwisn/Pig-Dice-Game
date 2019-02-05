@@ -6,7 +6,7 @@ A simple game made in JavaScript for learning purpose.
 
 #### Design
 
-![](/home/szymon/Pobrane/Desktop.png)
+![](https://github.com/szymwisn/Pig-Dice-Game/blob/master/preview.png)
 
 App was designed using **Figma**.
 
