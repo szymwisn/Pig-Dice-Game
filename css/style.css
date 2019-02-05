@@ -1,0 +1,152 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-align: center;
+    background-color: #292929;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 48px;
+    font-weight: 100;
+    color: #4FC795;
+}
+
+.btn {
+    background-color: #505050;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 25px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #5F6BDB;
+    transition: 0.3s background-color ease-in-out;
+}
+
+.btn:active {
+    transform: scale(1.05);
+    transition: 0.1s transform ease-in-out;
+}
+
+#btn-new {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#btn-roll {
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+#btn-pass {
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+.menu-box {
+    margin: 0 auto;
+    max-width: 450px;
+    position: relative;
+}
+
+.current-score-box {
+    margin-top: 50px;
+}
+
+#current-score {
+    font-size: 64px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.player-boxes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: no-wrap;
+    
+}
+
+.player-box {
+    width: 400px;
+    height: 520px;
+    display: inline-block;
+    margin: 20px;
+    background-color: #AEAEAE;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+}
+
+.player-box.active {
+    background-color: #4FC795;
+}
+
+.player-name {
+    font-family: 'Fredoka One', cursive;
+    font-size: 36px;
+    font-weight: 100;
+    margin-top: 50px;
+}
+
+.player-score {
+    font-size: 200px;
+    margin-top: 40px;
+}
+
+.dice {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 33%;
+}
+
+.active-player-text {
+    margin-top: 60px;
+}
+
+.footer {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 30px;    
+}
+
+.footer p {
+    color: rgb(80, 80, 80);
+    font-size: 14px;
+}
+
+.footer p a {
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+
+
+.footer p a:hover {
+    color: #5F6BDB;
+    transition: 0.2s all ease-in-out;
+    text-decoration: none;
+}
