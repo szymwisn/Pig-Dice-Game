@@ -110,13 +110,13 @@ function changeActivePlayer() {
     if(activePlayer == 1) {
         activePlayer = 2;
 
-        activePlayerOneTextDOM.textContent = 'ACTIVE';
-        activePlayerTwoTextDOM.textContent = 'INACTIVE';
+        activePlayerOneTextDOM.textContent = 'INACTIVE';
+        activePlayerTwoTextDOM.textContent = 'ACTIVE';
     } else {
         activePlayer = 1;
         
-        activePlayerOneTextDOM.textContent = 'INACTIVE';
-        activePlayerTwoTextDOM.textContent = 'ACTIVE';
+        activePlayerOneTextDOM.textContent = 'ACTIVE';
+        activePlayerTwoTextDOM.textContent = 'INACTIVE';
     }
 
     playerOneBoxDOM.classList.toggle('active');
