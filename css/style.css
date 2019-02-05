@@ -121,8 +121,18 @@ h1 {
     top: 33%;
 }
 
-.active-player-text {
+.active-player-1-text {
     margin-top: 60px;
+    color: #5E5E5E;
+}
+
+.active-player-2-text {
+    margin-top: 60px;
+    color: #5E5E5E;
+}
+
+.winner {
+    background-color: red;
 }
 
 .footer {
