@@ -80,6 +80,12 @@ function reset() {
         playerTwoBoxDOM.classList.remove('active');
     }
 
+    activePlayerOneTextDOM.style.display = 'inline-block';
+    activePlayerTwoTextDOM.style.display = 'inline-block';
+
+    activePlayerOneTextDOM.textContent = 'ACTIVE';
+    activePlayerTwoTextDOM.textContent = 'INACTIVE';
+
     diceDOM.style.display = 'inline-block';
     diceDOM.src = 'img/dice-1.png';
 
@@ -92,9 +98,6 @@ function reset() {
     playerTwoBoxDOM.classList.remove('winner');
     playerOneBoxDOM.style.display = 'inline-block';
     playerTwoBoxDOM.style.display = 'inline-block';
-
-    activePlayerOneTextDOM.style.display = 'inline-block';
-    activePlayerTwoTextDOM.style.display = 'inline-block';
 
     currentScore = 0;
     playerOneScore = 0;
