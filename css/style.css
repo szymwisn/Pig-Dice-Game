@@ -132,7 +132,7 @@ h1 {
 }
 
 .winner {
-    background-color: red;
+    background-color: #5F6BDB;
 }
 
 .footer {
@@ -141,7 +141,7 @@ h1 {
     margin-right: auto;
     left: 0;
     right: 0;
-    bottom: 30px;    
+    bottom: 20px;    
 }
 
 .footer p {
